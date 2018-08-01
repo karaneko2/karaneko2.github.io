@@ -194,45 +194,28 @@
                 <h2>Твой мир без границ!</h2>
                 <h3 style="padding-top: 40px;"><strong>Цены ниже предлагаемых туроператорами</strong></h3>
             </div>
-            <!--new plugin sletat' 4.0-->
-            <div class="container" style="padding-top: 40px;">
-                <div class="col-md-10 ml-auto mr-auto">
-                    <script type="text/javascript" src="https://ui.sletat.ru/module-4.0/core.js" charset="utf-8"></script>
-                    <script type="text/javascript">sletat.FrameSearch.$create({
-                      city                 : 1274,
-                      radius               : 0,
-                      theme                : "azure-dark",
-                      formType             : "horizontal",
-                      useJumpTo            : true,
-                      jumpToTarget         : "blank",
-                      jumpToAddress        : "https://karaneko.github.io/index_big4_0.html",
-                      useSinglePage        : true,
-                      resultFullCountRows  : 15,
-                      resultShortCountRows : 10,
-                      resultGroupCountRows : 20,
-                      enabledCurrencies    : ["RUB", "EUR", "USD"],
-                      agencyContact1       : {
-                        header             : "Контакты",
-                        phone              : "+7(912)3456789",
-                        email              : "ourf@mail.ru",
-                        content            : "Приветствуем Вас!"
+            <!--new plugin sletat' 5.0-->
+            <div class="container-fluid text-center" style="padding-top: 40px;">
+<!--                <div class="col-md-10 ml-auto mr-auto">-->
+                    <script type="text/javascript" src="https://ui.sletat.ru/module-5.0/app.js" charset="utf-8"></script>
+                    <script type="text/javascript">sletat.createModule5('Search', {
+                      city              : 1274,
+                      files             : ["https://ui.sletat.ru/module-5.0/theme/sea.min.css"],
+                      useJumpTo         : true,
+                      agencyContact1    : {
+                        header          : "Наши контакты",
+                        phone           : "+7(912)3456789",
+                        email           : "ourf@mail.ru",
+                        content         : "Приветствуем Вас!"
                       },
-                      agencyContact2       : {
-                        header             : "Наши контакты",
-                        phone              : "+7(912)3456789",
-                        email              : "ourf@mail.ru",
-                        content            : "Рады приветствовать Вас!"
-                      },
-                      useCard              : true,
-                      useFakeDiscount      : true,
-                      fakeDiscount         : 0.02,
-                      useShortLink         : 1,
-                      resultsType          : "popup"
+                      enabledCurrencies : ["RUB", "EUR", "USD"],
+                      useCard           : true,
+                      formType          : "full"
                     });</script>
                     <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
-                </div>
+<!--                </div>-->
             </div>
-            <!--/new plugin sletat' 4.0-->    
+            <!--/new plugin sletat' 5.0-->    
             <!--plugin-tours search-->
             <!--<div align="center" class="container plugin" style="padding-top: 40px">
                 <div class="col-md-10 ml-auto mr-auto">
@@ -247,7 +230,7 @@
                 </div>
             </div>-->
             <!--plugin-vertical-->
-            <div class="container plugin-vertical">
+            <!--<div class="container plugin-vertical">
                 <div class="col-md-10 ml-auto mr-auto">
                     <script type="text/javascript" src="https://ui.sletat.ru/module-4.0/core.js" charset="utf-8"></script>
                     <script type="text/javascript">sletat.FrameSearch.$create({
@@ -259,7 +242,7 @@
                     });</script>
                     <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
                 </div>
-            </div>
+            </div>-->
             <!--/plugin-vertical-->
             <!--plugin-vertical-Results-->
             <!--/plugin-vertical-Results-->
