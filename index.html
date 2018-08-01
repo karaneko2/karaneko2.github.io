@@ -195,12 +195,13 @@
                 <h3 style="padding-top: 40px;"><strong>Цены ниже предлагаемых туроператорами</strong></h3>
             </div>
             <!--new plugin sletat' 5.0-->
-            <div class="container-fluid text-center" style="padding-top: 40px;">
+            <div class="container text-center" style="padding-top: 40px;">
 <!--                <div class="col-md-10 ml-auto mr-auto">-->
                     <script type="text/javascript" src="https://ui.sletat.ru/module-5.0/app.js" charset="utf-8"></script>
                     <script type="text/javascript">sletat.createModule5('Search', {
                       city              : 1274,
                       files             : ["https://ui.sletat.ru/module-5.0/theme/sea.min.css"],
+                      usePricePerson    : true,
                       useJumpTo         : true,
                       agencyContact1    : {
                         header          : "Наши контакты",
@@ -210,6 +211,8 @@
                       },
                       enabledCurrencies : ["RUB", "EUR", "USD"],
                       useCard           : true,
+                      useFakeDiscount   : true,
+                      fakeDiscount      : 0.02,
                       formType          : "full"
                     });</script>
                     <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
@@ -387,22 +390,7 @@
                 </div>
             </section>
             <!--/contacts-->
-            <!--feedback-->
-            <div class="jumbotron text-center" style="background-color: #f8f9fa; margin-left: -15px; margin-right: -15px;">
-                <div class="col-md-5 ml-auto mr-auto">
-                    <h3 class="name">Новости и предложения</h3> 
-                    <p>Подписывайтесь на наши новости и интересные предложения</p> 
-                    <form class="form-inline text-center" id="feedbackForm">
-                        <div class="input-group">
-                          <input type="email" class="form-control" id="email" size="50" placeholder="Email Address" required>
-                          <div class="input-group-btn">
-                            <button type="submit" id="formSubmit" class="btn btn-danger">Подписаться</button>
-                          </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <!--/feedback-->
+        
             <!--TourOperators-->
             <div class="container-fluid text-center">
                 <h3>Туроператоры</h3>
@@ -430,8 +418,23 @@
                     </li>
                 </ul>
             </div>
-            <hr>
             <!--/TourOperators-->
+            <!--feedback-->
+            <div class="jumbotron text-center" style="background-color: #f8f9fa; margin-left: -15px; margin-right: -15px;">
+                <div class="col-md-5 ml-auto mr-auto">
+                    <h3 class="name">Новости и предложения</h3> 
+                    <p>Подписывайтесь на наши новости и интересные предложения</p> 
+                    <form class="form-inline text-center" id="feedbackForm">
+                        <div class="input-group">
+                          <input type="email" class="form-control" id="email" size="50" placeholder="Email Address" required>
+                          <div class="input-group-btn">
+                            <button type="submit" id="formSubmit" class="btn btn-danger">Подписаться</button>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--/feedback-->
     </div>
 <!--    <div class="container text-center">Не нашли подходящего варианта? Посмотрите билеты, отели и  страховки у наших партнеров!</div>-->
     <div class="container-fluid text-center" >
