@@ -62,7 +62,7 @@
         }
         /*-----media-------*/
         .plugin{
-            height: 100%;
+            height: auto;
             margin-left: auto;
             margin-right: auto;
         }
@@ -197,30 +197,34 @@
                 <h2>Твой мир без границ!</h2>
                 <h3 style="padding-top: 40px;"><strong>Цены ниже предлагаемых туроператорами</strong></h3>
             </div>
-            <!--new plugin sletat' 5.0-->
-            <div class="container text-center" style="padding-top: 35px;">
-<!--                <div class="col-md-10 ml-auto mr-auto">-->
-                    <script type="text/javascript" src="https://ui.sletat.ru/module-5.0/app.js" charset="utf-8"></script>
-                    <script type="text/javascript">sletat.createModule5('Search', {
-                      city              : 1274,
-                      files             : ["https://ui.sletat.ru/module-5.0/theme/sea.min.css"],
-                      usePricePerson    : true,
-                      agencyContact1    : {
-                        header          : "Наши контакты",
-                        phone           : "+7(900)1234567",
-                        email           : "email@mail.ru",
-                        content         : "Приветствуем вас!"
-                      },
-                      enabledCurrencies : ["RUB", "EUR", "USD"],
-                      buyingType        : "card",
-                      useCard           : true,
-                      useFakeDiscount   : true,
-                      fakeDiscount      : 0.02
+            <!--new plugin sletat' 4.0-->
+            <div class="container text-center plugin" style="padding-top: 35px;">
+                <div class="col-md-10 ml-auto mr-auto">
+                    <script type="text/javascript" src="https://ui.sletat.ru/module-4.0/core.js" charset="utf-8"></script>
+                    <script type="text/javascript">sletat.FrameSearch.$create({
+                      city                 : 1274,
+                      radius               : 0,
+                      theme                : "navy-light",
+                      usePricePerson       : true,
+                      formType             : "horizontal",
+                      useJumpTo            : true,
+                      jumpToTarget         : "blank",
+                      jumpToAddress        : "https://karaneko2.github.io/index_big4_0.html",
+                      resultFullCountRows  : 15,
+                      resultShortCountRows : 15,
+                      resultGroupCountRows : 15,
+                      enabledCurrencies    : ["RUB", "EUR", "USD"],
+                      buyingType           : "card",
+                      useCard              : true,
+                      useFakeDiscount      : true,
+                      fakeDiscount         : 0.02,
+                      useShortLink         : 1,
+                      resultsType          : "popup"
                     });</script>
-                    <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>
-<!--                </div>-->
+                    <span class="sletat-copyright">Идет загрузка модуля <a href="https://sletat.ru/" title="поиск туров" target="_blank">поиска туров</a> &hellip;</span>    
+                </div>
             </div>
-            <!--/new plugin sletat' 5.0-->    
+            <!--/new plugin sletat' 4.0-->    
             <!--plugin-tours search-->
             <!--<div align="center" class="container plugin" style="padding-top: 40px">
                 <div class="col-md-10 ml-auto mr-auto">
